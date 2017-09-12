@@ -1,0 +1,93 @@
+/*
+  Theme Name: ELK Mobility
+  Theme Author: The Childress Agency
+  Theme Author URI: https://childressagency.com
+  Version: 1.0
+*/
+
+body{
+  font-family:"Source Sans Pro", sans-serif;
+  font-weight:600;
+  color:#3e394f;
+  padding-top:60px;
+}
+
+#header-nav{
+  padding-top:5px;
+  padding-bottom:10px;
+  box-shadow:0px 0px 10px #000;
+  background-color:#fff;
+}
+#navbar{
+  z-index:1;
+}
+.nav>li>a{
+  color:#3e394f;
+  text-transform:uppercase;
+  position:relative;
+}
+.nav>li.active>a,
+.nav>li>a:hover,
+.nav>li>a:focus{
+  background-color:transparent;
+  color:#3e394f;
+}
+#header-nav .social{
+  margin-top:10px;
+  position:relative;
+  z-index:2;
+}
+#header-nav .social .fa{
+  font-size:26px;
+  color:#3e394f;
+  margin-left:15px;
+}
+#header-nav .header-logo{
+  position:relative;
+  z-index:2;
+}
+.navbar-toggle{
+  border-color:#3e394f;
+}
+.navbar-toggle .icon-bar{
+  background-color:#3e394f;
+}
+
+
+@media (max-width:767px){
+  #header-nav{
+    padding-bottom:5px;
+  }
+}
+@media (min-width:768px){
+  .navbar-collapse{
+    position:absolute;
+    left:0px;
+    right:0px;
+    text-align:center;
+  }
+  .navbar-nav{
+    float:none;
+    display:inline-block;
+  }
+  .nav>li>a:after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    bottom:15px;
+    background-color:#838a9c;
+    height:2px;
+    width:0;
+    -webkit-transition:width .2s ease;
+    transition:width .2s ease;
+  }
+  .nav>li.active>a:after,
+  .nav>li>a:hover:after,
+  .nav>li>a:focus:after{
+    width:70%;
+  }
+}
