@@ -19,6 +19,28 @@ h1{
   font-weight:700;
 }
 
+img.alignnone,
+img.aligncenter{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:25px auto;
+}
+img.alignright{
+  display:block;
+  max-width:100%;
+  height:auto;
+  float:right;
+  margin:25px 0px 25px 25px;
+}
+img.alignleft{
+  display:block;
+  max-width:100%;
+  height:auto;
+  float:left;
+  margin:25px 25px 25px 0px;
+}
+
 .btn-main{
   text-transform:uppercase;
   color:#3e394f;
@@ -92,6 +114,7 @@ footer .social>a:focus{
 .hero{
   background-repeat:no-repeat;
   background-size:cover;
+  min-height:380px;
 }
 .hp-hero{
   padding-top:60px;
