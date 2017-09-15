@@ -12,12 +12,22 @@ body{
   padding-top:57px;
 }
 
-h1{
-  font-size:30px;
+h1,h2,h3{
   color:#c72c28;
   text-transform:uppercase;
   font-weight:700;
+  font-family:Assistant, sans-serif;
 }
+h1{
+  font-size:30px;
+}
+h2{
+  font-size:24px;
+}
+h3{
+  font-size:18px;
+}
+
 
 img.alignnone,
 img.aligncenter{
@@ -44,7 +54,7 @@ img.alignleft{
 .btn-main{
   text-transform:uppercase;
   color:#3e394f;
-  background-color:#fff;
+  background-color:transparent;
   font-weight:700;
   border:1px solid #838a9c;
   border-radius:6px;
@@ -250,12 +260,14 @@ footer .social>a:focus{
   background-color:#000;
 }
 
-#hp-testimonials{
+#testimonials{
   padding-top:60px;
   padding-bottom:60px;
   text-align:center;
-  box-shadow: 0px 5px 17px #000;
   position:relative;
+}
+.hp-testimonials{
+  box-shadow: 0px 5px 17px #000;  
 }
 .testimonial-slider-footer{
   margin-top:40px;
@@ -278,7 +290,7 @@ footer .social>a:focus{
   text-transform:uppercase;
   line-height:1.2em;
 }
-#hp-testimonials .testimonial-container{
+#testimonials .testimonial-container{
   max-width:700px;
   margin-left:auto;
   margin-right:auto;
@@ -364,6 +376,66 @@ footer{
 }
 .copyright>p{
   margin-bottom:0;
+}
+
+#main{
+  padding-top:40px;
+}
+article h2>small{
+  display:block;
+  font-size:75%;
+  font-weight:700;
+  color:#3e394f;
+}
+article ul{
+  list-style:none;
+  padding-left:0;
+}
+article ul>li{
+  margin-bottom:10px;
+}
+
+#servicesTabs{
+  text-align:center;
+}
+#servicesTabs .nav-tabs{
+  display:inline-block;
+  margin-bottom:-6px;
+  border-bottom:none;
+}
+#servicesTabs .nav-tabs>li{
+  background-color:#acacbc;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+}
+#servicesTabs .nav-tabs>li.active{
+  position:relative;
+  z-index:2;
+}
+#servicesTabs .nav-tabs>li+li{
+  margin-left:15px;
+}
+#servicesTabs .nav-tabs>li>a{
+  border:none;
+  background-color:transparent;
+}
+#servicesTabs .nav-tabs>li>a:hover,
+#servicesTabs .nav-tabs>li>a:focus,
+#servicesTabs .nav-tabs>li>a:after{
+  background-color:transparent;
+}
+#servicesTabs .tab-content{
+  background-color:#acacbc;
+  padding:40px 15px;
+  box-shadow:0px -1px 10px #000;
+  position:relative;
+  z-index:1;
+}
+#servicesTabs .tab-content>.tab-pane{
+  max-width:600px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:left;
 }
 
 
