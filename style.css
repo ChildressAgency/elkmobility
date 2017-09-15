@@ -482,6 +482,40 @@ article ul>li{
   text-decoration:underline;
 }
 
+/*
+Default style for WP-PageNavi plugin
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+.wp-pagenavi {
+  clear: both;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+  text-decoration: none;
+  border: 1px solid #BFBFBF;
+  padding: 3px 5px;
+  margin: 2px;
+}
+.wp-pagenavi a:hover,
+.wp-pagenavi span.current {
+  border-color: #000;
+}
+.wp-pagenavi span.current {
+  font-weight: bold;
+}
+/* end default pagenavi css */
+
+.loop-item{
+  margin-bottom:40px;
+}
+.loop-item .media-heading{
+  margin-bottom:0;
+}
+.wp-pagenavi{
+  margin-top:60px;
+  text-align:center;
+}
+
 
 @media (max-width:767px){
   #header-nav{
