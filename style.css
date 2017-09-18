@@ -513,7 +513,7 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 .loop-item{
   margin-bottom:40px;
 }
-.loop-item .media-heading{
+.loop-item h1{
   margin-bottom:0;
 }
 .wp-pagenavi{
