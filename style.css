@@ -231,6 +231,9 @@ footer .social>a:focus{
   margin-right: auto;
 }
 
+.image-block{
+  margin-bottom:-1px;
+}
 .image-block>img{
   width:100%;
   height:auto;
@@ -383,9 +386,6 @@ footer{
 #main{
   padding-top:40px;
   padding-bottom:60px;
-  position:relative;
-  box-shadow:0px 3px 10px #000;
-  z-index:1;
 }
 article h2>small{
   display:block;
@@ -555,7 +555,11 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   padding-top:40px;
   padding-bottom:40px;
 }
+#calendar>.container{
+  max-width:700px;
+}
 
+<<<<<<< HEAD
 #courses{
   box-shadow:0px -4px 10px #000;
   position:relative;
@@ -582,7 +586,49 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   text-transform:uppercase;
   font-weight:700;
 }
+.eq-icon{
+  text-align:center;
+  position:relative;
+  padding-top:60px;
+  margin-top:25px;
+}
+.eq-icon:before{
+  content:"";
+  position:absolute;
+  background-image:url(images/sprites.png);
+  background-repeat:no-repeat;
+  top:0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.eq-icon.eq-screens:before{
+  background-position:0 -150px;
+  height:45px;
+  width:178px;
+}
+.eq-icon.eq-connection:before{
+  background-position:0 -105px;
+  height:42px;
+  width:89px;
+}
+.eq-icon.eq-phones:before{
+  background-position:-33px -44px;
+  height:56px;
+  width:78px;
+}
+.eq-between{
+  text-align:center;
+  color:#c72c28;
+  font-weight:700;
+  font-size:28px;
+  line-height:1em;
+  margin-top:25px;
+}
 
+=======
+>>>>>>> parent of 54a8b66... education demo styled
 
 @media (max-width:767px){
   #header-nav{
