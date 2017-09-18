@@ -96,7 +96,6 @@ img.alignleft{
 }
 #header-nav .social,
 footer .social{
-  margin-top:10px;
   position:relative;
   z-index:2;
 }
@@ -231,9 +230,6 @@ footer .social>a:focus{
   margin-right: auto;
 }
 
-.image-block{
-  margin-bottom:-1px;
-}
 .image-block>img{
   width:100%;
   height:auto;
@@ -386,6 +382,9 @@ footer{
 #main{
   padding-top:40px;
   padding-bottom:60px;
+  box-shadow:0px 4px 10px #000;
+  position:relative;
+  z-index:1;
 }
 article h2>small{
   display:block;
@@ -559,7 +558,6 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   max-width:700px;
 }
 
-<<<<<<< HEAD
 #courses{
   box-shadow:0px -4px 10px #000;
   position:relative;
@@ -627,8 +625,6 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   margin-top:25px;
 }
 
-=======
->>>>>>> parent of 54a8b66... education demo styled
 
 @media (max-width:767px){
   #header-nav{
