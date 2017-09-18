@@ -555,6 +555,9 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   padding-top:40px;
   padding-bottom:40px;
 }
+#calendar>.container{
+  max-width:700px;
+}
 
 #courses{
   box-shadow:0px -4px 10px #000;
@@ -581,6 +584,46 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   color:#29abe2;
   text-transform:uppercase;
   font-weight:700;
+}
+.eq-icon{
+  text-align:center;
+  position:relative;
+  padding-top:60px;
+  margin-top:25px;
+}
+.eq-icon:before{
+  content:"";
+  position:absolute;
+  background-image:url(images/sprites.png);
+  background-repeat:no-repeat;
+  top:0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.eq-icon.eq-screens:before{
+  background-position:0 -150px;
+  height:45px;
+  width:178px;
+}
+.eq-icon.eq-connection:before{
+  background-position:0 -105px;
+  height:42px;
+  width:89px;
+}
+.eq-icon.eq-phones:before{
+  background-position:-33px -44px;
+  height:56px;
+  width:78px;
+}
+.eq-between{
+  text-align:center;
+  color:#c72c28;
+  font-weight:700;
+  font-size:28px;
+  line-height:1em;
+  margin-top:25px;
 }
 
 
