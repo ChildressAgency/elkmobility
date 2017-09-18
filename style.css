@@ -243,6 +243,10 @@ footer .social>a:focus{
 .narrow-section h1{
   text-align:left;
 }
+.narrow-section ul{
+  list-style:none;
+  padding-left:0;
+}
 .narrow-section ul>li{
   margin-bottom:10px;
   line-height:1.2em;

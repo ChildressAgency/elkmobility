@@ -68,6 +68,8 @@ function elkmobility_styles(){
   wp_enqueue_style('elkmobility');
 }
 
+add_theme_support('post-thumbnails');
+
 register_nav_menu( 'header-nav', 'Header Navigation' );
 /**
  * Class Name: wp_bootstrap_navwalker
@@ -297,3 +299,26 @@ function elkmobility_header_fallback_menu(){ ?>
     </ul>
   </div>
 <?php }
+
+if(function_exists('acf_add_options_page')){
+  acf_add_options_page(array(
+    'page_title' => 'General Settings',
+    'menu_title' => 'General Settings',
+    'menu_slug' => 'general-settings',
+    'capability' => 'edit_posts',
+    'redirect' => false
+  ));
+}
+
+add_action('widgets_init', 'elkmobility_widgets_init');
+function elkmobility_widgets_init(){
+	register_sidebar(array(
+		'name' => __('Blog Sidebar', 'elkmobility'),
+		'id' => 'sidebar-1',
+		'description' => __('Add widgets here to appear in your sidebar on blog posts and archive pages.', 'elkmobility'),
+		'before_widget' => '<div class="archives-widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4>',
+		'after_title' => '</h4>'
+	));
+}

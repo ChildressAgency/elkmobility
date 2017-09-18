@@ -68,41 +68,43 @@
 
     </div>
   </nav>
-  <section class="hero hp-hero" style="background-image:url(images/woman-in-hospital-bed.jpg); background-position:right bottom;">
-    <img src="images/logo-large.png" class="img-responsive center-block hero-logo" alt="ELK Mobility Logo" />
-    <div class="container container-sm-height">
-      <div class="row row-sm-height">
-        <div class="col-sm-4 col-sm-height thumb-card">
-          <div class="circle-img">
-            <img src="images/doctor-with-patient-tube.jpg" class="img-responsive center-block" alt="" />
-            <div class="overlay"></div>
+  <section class="hero<?php if(is_front_page()){ echo ' hp-hero'; } ?>" style="background-image:url(<?php the_field('hero_image'); ?>); <?php the_field('hero_image_css'); ?>">
+    <?php if(is_front_page()): ?>
+      <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-large.png" class="img-responsive center-block hero-logo" alt="ELK Mobility Logo" />
+      <div class="container container-sm-height">
+        <div class="row row-sm-height">
+          <div class="col-sm-4 col-sm-height thumb-card">
+            <div class="circle-img">
+              <img src="<?php echo get_field('consulting_card_image') ? get_field('consulting_card_image') : get_stylesheet_directory_uri() . '/images/doctor-with-patient-tube.jpg'; ?>" class="img-responsive center-block" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <h2>Consulting</h2>
+            <?php the_field('consulting_card_text'); ?>
+            <div class="clearfix"></div>
+            <a href="<?php the_field('consulting_card_link'); ?>" class="btn-main"><?php the_field('consulting_card_link_text'); ?></a>
           </div>
-          <h2>Consulting</h2>
-          <p>The #1 goal of ELKMobility is to provide value to your organization by aligning best practices of ICU clinical disciplines for mobilization of critical care patients to decrease lengths of stay, costs related to post-ICU deficits, and maximize patient outcomes. ad minim</p>
-          <div class="clearfix"></div>
-          <a href="#" class="btn-main">Learn More</a>
-        </div>
-        <div class="col-sm-4 col-sm-height thumb-card">
-          <div class="circle-img">
-            <img src="images/clipped-ribbed-tube.jpg" class="img-responsive center-block" alt="" />
-            <div class="overlay"></div>
+          <div class="col-sm-4 col-sm-height thumb-card">
+            <div class="circle-img">
+              <img src="<?php echo get_field('education_card_image') ? get_field('education_card_image') : get_stylesheet_directory_uri() . '/images/doctor-with-patient-tube.jpg'; ?>" class="img-responsive center-block" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <h2>Education</h2>
+            <?php the_field('education_card_text'); ?>
+            <div class="clearfix"></div>
+            <a href="<?php the_field('education_card_link'); ?>" class="btn-main"><?php the_field('education_card_link_text'); ?></a>
           </div>
-          <h2>Education</h2>
-          <p>We offer...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.</p>
-          <div class="clearfix"></div>
-          <a href="#" class="btn-main">Learn More</a>
-        </div>
-        <div class="col-sm-4 col-sm-height thumb-card">
-          <div class="circle-img">
-            <img src="images/doctor-with-patient-tube.jpg" class="img-responsive center-block" alt="" />
-            <div class="overlay"></div>
+          <div class="col-sm-4 col-sm-height thumb-card">
+            <div class="circle-img">
+              <img src="<?php echo get_field('telerehab_card_image') ? get_field('telerehab_card_image') : get_stylesheet_directory_uri() . '/images/doctor-with-patient-tube.jpg'; ?>" class="img-responsive center-block" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <h2>Telerehab / Coaching</h2>
+            <?php the_field('telerehab_card_text'); ?>
+            <div class="clearfix"></div>
+            <a href="<?php the_field('telerehab_card_link'); ?>" class="btn-main"><?php the_field('telerehab_card_link_text'); ?></a>
           </div>
-          <h2>Telerehab / Coaching</h2>
-          <p>We offer...Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.</p>
-          <div class="clearfix"></div>
-          <a href="#" class="btn-main">Learn More</a>
         </div>
       </div>
-    </div>
-    <a href="#missionStatement" id="scrollDown"></a>
+      <a href="#missionStatement" id="scrollDown"></a>
+    <?php endif; ?>
   </section>
