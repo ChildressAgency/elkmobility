@@ -231,9 +231,6 @@ footer .social>a:focus{
   margin-right: auto;
 }
 
-.image-block{
-  margin-bottom:-1px;
-}
 .image-block>img{
   width:100%;
   height:auto;
@@ -386,6 +383,9 @@ footer{
 #main{
   padding-top:40px;
   padding-bottom:60px;
+  position:relative;
+  box-shadow:0px 3px 10px #000;
+  z-index:1;
 }
 article h2>small{
   display:block;
@@ -554,6 +554,33 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
 #calendar{
   padding-top:40px;
   padding-bottom:40px;
+}
+
+#courses{
+  box-shadow:0px -4px 10px #000;
+  position:relative;
+  text-align:center;
+  padding-top:40px;
+  padding-bottom:60px;
+}
+#courses>.container{
+  max-width:700px;
+}
+.course-item{
+  background-color:#3e394f;
+  color:#fff;
+  text-align:left;
+  padding:20px 30px;
+  margin-top:40px;
+}
+.course-item>h1{
+  margin-top:0;
+  color:#29abe2;
+}
+.course-item>h4{
+  color:#29abe2;
+  text-transform:uppercase;
+  font-weight:700;
 }
 
 
