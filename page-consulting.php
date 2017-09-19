@@ -38,7 +38,7 @@
   </section>
   <section id="calendar">
     <div class="container">
-      <?php the_field('calendar_section_intro_content'); ?>
+      <?php the_field('calendar_section_intro'); ?>
       <div class="embed-responsive embed-responsive-4by3">
         <?php the_field('calendar_section_embed_code'); ?>
       </div>
