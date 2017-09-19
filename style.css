@@ -480,6 +480,7 @@ article ul>li{
 }
 .archives-widget ul>li>a{
   color:#3e394f;
+  text-transform:uppercase;
 }
 .archives-widget ul>li>a:hover,
 .archives-widget ul>li>a:focus{

@@ -36,7 +36,7 @@
       WHERE post_status = 'publish'
         AND post_type = 'post'
         AND post_date <= now()
-        AND post_date => DATE_SUB(now(), INTERVAL 3 YEAR)
+        AND post_date >= DATE_SUB(now(), INTERVAL 3 YEAR)
       GROUP BY month, year
       ORDER BY post_date DESC");
   
