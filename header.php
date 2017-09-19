@@ -68,7 +68,7 @@
 
     </div>
   </nav>
-  <section class="hero<?php if(is_front_page()){ echo ' hp-hero'; } ?>" style="background-image:url(<?php the_field('hero_image'); ?>); <?php the_field('hero_image_css'); ?>">
+  <section class="hero<?php if(is_front_page()){ echo ' hp-hero'; } ?>" style="background-image:url(<?php echo get_field('hero_image') ? get_field('hero_image') : get_stylesheet_directory_uri() . '/images/hero-helping-person-walker.jpg'; ?>); <?php the_field('hero_image_css'); ?>">
     <?php if(is_front_page()): ?>
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-large.png" class="img-responsive center-block hero-logo" alt="ELK Mobility Logo" />
       <div class="container container-sm-height">

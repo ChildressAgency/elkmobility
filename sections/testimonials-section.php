@@ -1,5 +1,5 @@
 <?php if(have_rows('testimonials', 'option')): ?>
-  <section id="testimonials" class="hp-testimonials">
+  <section id="testimonials"<?php if(is_front_page()){ echo 'class="hp-testimonials"'; } ?>>
     <div class="container">
       <h1>Testimonials</h1>
       <div class="testimonial-container">
@@ -14,7 +14,7 @@
                   </div>
                   <div class="media-body">
                     <h3 class="media-heading"><?php the_sub_field('testimonial_author'); ?></h3>
-                    <p><?php echo get_sub_field('testimonial_author_city') ? get_field('testimonial_author_city') . '<br />' : ''; echo get_sub_field('testimonial_author_position'); ?></p>
+                    <p><?php echo get_sub_field('testimonial_author_city') ? get_sub_field('testimonial_author_city') . '<br />' : ''; echo get_sub_field('testimonial_author_position'); ?></p>
                   </div>
                 </div>
               </div>
