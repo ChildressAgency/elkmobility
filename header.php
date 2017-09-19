@@ -79,7 +79,7 @@
               <div class="overlay"></div>
             </div>
             <h2><?php the_field('card_1_title'); ?></h2>
-            <?php the_field('card_1_text'); ?>
+            <?php the_field('card_1_content'); ?>
             <div class="clearfix"></div>
             <a href="<?php the_field('card_1_link'); ?>" class="btn-main"><?php the_field('card_1_link_text'); ?></a>
           </div>
@@ -89,7 +89,7 @@
               <div class="overlay"></div>
             </div>
             <h2><?php the_field('card_2_title'); ?></h2>
-            <?php the_field('card_2_text'); ?>
+            <?php the_field('card_2_content'); ?>
             <div class="clearfix"></div>
             <a href="<?php the_field('card_2_link'); ?>" class="btn-main"><?php the_field('card_2_link_text'); ?></a>
           </div>
@@ -99,7 +99,7 @@
               <div class="overlay"></div>
             </div>
             <h2><?php the_field('card_3_title'); ?></h2>
-            <?php the_field('card_3_text'); ?>
+            <?php the_field('card_3_content'); ?>
             <div class="clearfix"></div>
             <a href="<?php the_field('card_3_link'); ?>" class="btn-main"><?php the_field('card_3_link_text'); ?></a>
           </div>
