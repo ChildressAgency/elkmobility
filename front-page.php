@@ -3,7 +3,7 @@
     <div class="container">
       <span class="ekg-icon"></span>
       <h1><?php the_field('mission_statement_section_title'); ?></h1>
-      <?php the_field('mission_statment_section_content'); ?>
+      <?php the_field('mission_statement_section_content'); ?>
       <a href="<?php echo home_url('about'); ?>" class="btn-main">About Us</a>
     </div>
   </section>
