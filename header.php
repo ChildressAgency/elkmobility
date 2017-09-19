@@ -20,7 +20,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body <?php body_class(); ?>>
   <nav id="header-nav" class="navbar-fixed-top">
     <div class="container">
       <a href="<?php echo home_url(); ?>" class="header-logo pull-left"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="ELK mobility Logo" /></a>
