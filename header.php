@@ -45,9 +45,9 @@
       </div>
       <?php
         $social_menu = '<li class="visible-xs-block"><div class="social">';
-        if($facebook){ $social_media .= '<a href="' . $facebook . '" target="_blank"><i class="fa fa-facebook-official"></i></a>'; }
-        if($linkedin){ $social_media .= '<a href="' . $linkedin . '" target="_blank"><i class="fa fa-linkedin"></i></a>'; }
-        $social_media .= '</div></li>';
+        if($facebook){ $social_menu .= '<a href="' . $facebook . '" target="_blank"><i class="fa fa-facebook-official"></i></a>'; }
+        if($linkedin){ $social_menu .= '<a href="' . $linkedin . '" target="_blank"><i class="fa fa-linkedin"></i></a>'; }
+        $social_menu .= '</div></li>';
 
         $header_nav_args = array(
           'theme_location' => 'header-nav',
