@@ -1,4 +1,8 @@
-  <?php get_template_part('sections/contact-form', 'section'); ?>
+  <?php 
+    if(!is_page('contact')){
+      get_template_part('sections/contact-form', 'section');
+    }
+  ?>
   <footer>
     <div class="container">
       <a href="<?php echo home_url(); ?>" class="footer-logo pull-left"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" alt="ELK mobility Logo" /></a>

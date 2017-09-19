@@ -640,6 +640,12 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   .slide-control{
     display:none;
   }
+  #servicesTabs .nav-tabs>li+li{
+    margin-left:1px;
+  }
+  #servicesTabs img.media-object{
+    width:80px;
+  }
 }
 @media (min-width:768px){
   .navbar-collapse{
