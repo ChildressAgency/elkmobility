@@ -75,33 +75,33 @@
         <div class="row row-sm-height">
           <div class="col-sm-4 col-sm-height thumb-card">
             <div class="circle-img">
-              <img src="<?php echo get_field('consulting_card_image') ? get_field('consulting_card_image') : get_stylesheet_directory_uri() . '/images/doctor-with-patient-tube.jpg'; ?>" class="img-responsive center-block" alt="" />
+              <img src="<?php echo get_field('card_1_image') ? get_field('card_1_image') : get_stylesheet_directory_uri() . '/images/doctor-with-patient-tube.jpg'; ?>" class="img-responsive center-block" alt="" />
               <div class="overlay"></div>
             </div>
-            <h2>Consulting</h2>
-            <?php the_field('consulting_card_text'); ?>
+            <h2><?php the_field('card_1_title'); ?></h2>
+            <?php the_field('card_1_text'); ?>
             <div class="clearfix"></div>
-            <a href="<?php the_field('consulting_card_link'); ?>" class="btn-main"><?php the_field('consulting_card_link_text'); ?></a>
+            <a href="<?php the_field('card_1_link'); ?>" class="btn-main"><?php the_field('card_1_link_text'); ?></a>
           </div>
           <div class="col-sm-4 col-sm-height thumb-card">
             <div class="circle-img">
-              <img src="<?php echo get_field('education_card_image') ? get_field('education_card_image') : get_stylesheet_directory_uri() . '/images/doctor-with-patient-tube.jpg'; ?>" class="img-responsive center-block" alt="" />
+              <img src="<?php echo get_field('card_2_image') ? get_field('card_2_image') : get_stylesheet_directory_uri() . '/images/doctor-with-patient-tube.jpg'; ?>" class="img-responsive center-block" alt="" />
               <div class="overlay"></div>
             </div>
-            <h2>Education</h2>
-            <?php the_field('education_card_text'); ?>
+            <h2><?php the_field('card_2_title'); ?></h2>
+            <?php the_field('card_2_text'); ?>
             <div class="clearfix"></div>
-            <a href="<?php the_field('education_card_link'); ?>" class="btn-main"><?php the_field('education_card_link_text'); ?></a>
+            <a href="<?php the_field('card_2_link'); ?>" class="btn-main"><?php the_field('card_2_link_text'); ?></a>
           </div>
           <div class="col-sm-4 col-sm-height thumb-card">
             <div class="circle-img">
-              <img src="<?php echo get_field('telerehab_card_image') ? get_field('telerehab_card_image') : get_stylesheet_directory_uri() . '/images/doctor-with-patient-tube.jpg'; ?>" class="img-responsive center-block" alt="" />
+              <img src="<?php echo get_field('card_3_image') ? get_field('card_3_image') : get_stylesheet_directory_uri() . '/images/doctor-with-patient-tube.jpg'; ?>" class="img-responsive center-block" alt="" />
               <div class="overlay"></div>
             </div>
-            <h2>Telerehab / Coaching</h2>
-            <?php the_field('telerehab_card_text'); ?>
+            <h2><?php the_field('card_3_title'); ?></h2>
+            <?php the_field('card_3_text'); ?>
             <div class="clearfix"></div>
-            <a href="<?php the_field('telerehab_card_link'); ?>" class="btn-main"><?php the_field('telerehab_card_link_text'); ?></a>
+            <a href="<?php the_field('card_3_link'); ?>" class="btn-main"><?php the_field('card_3_link_text'); ?></a>
           </div>
         </div>
       </div>
