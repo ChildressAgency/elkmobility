@@ -14,7 +14,7 @@
                   }
                 ?>
                 <h1><?php the_title(); ?></h1>
-                <p class="blog-author"><?php echo get_the_date('d/m'); ?> - By <?php the_author(); ?></p>
+                <p class="blog-author"><?php echo get_the_date('m/d'); ?> - By <?php the_author(); ?></p>
                 <?php the_excerpt(); ?>
                 <a href="<?php the_permalink(); ?>" class="btn-main btn-alt">Read More</a>
               </div>
@@ -30,7 +30,7 @@
             <?php endwhile; ?>
 
           <?php endif; ?>
-        <?php endwhile; endif; ?>
+        <?php endif; ?>
       </div>
       <?php get_sidebar(); ?>
     </div>

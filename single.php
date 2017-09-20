@@ -8,7 +8,7 @@
           } ?>
           <div class="row">
             <div class="col-sm-7 col-md-8">
-              <h3 class="blog-date"><?php echo get_the_date('d\/m'); ?></h3>
+              <h3 class="blog-date"><?php echo get_the_date('m/d'); ?></h3>
               <h1><?php the_title(); ?></h1>
               <article>
                 <?php the_content(); ?>
@@ -21,7 +21,7 @@
                   </div>
                   <div class="media-body">
                     <h3 class="media-heading"><?php the_author(); ?></h3>
-                    <p><?php echo get_field('user_city', 'user_' . $author_id) ? get_field('user_city', 'user_' . $author_id) . '<br />' : ''; ?><br /><?php the_field('user_title', 'user_' . $author_id); ?></p>
+                    <p><?php echo get_field('user_city', 'user_' . $author_id) ? get_field('user_city', 'user_' . $author_id) . '<br />' : ''; ?><?php the_field('user_title', 'user_' . $author_id); ?></p>
                   </div>
                 </div>
               </div>

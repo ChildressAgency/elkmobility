@@ -13,7 +13,7 @@
           <div class="blog-summary">
             <div class="media">
               <div class="media-left">
-                <h3 class="blog-date"><?php echo get_the_date('d\/m'); ?></h3>
+                <h3 class="blog-date"><?php echo get_the_date('m/d'); ?></h3>
               </div>
               <div class="media-body">
                 <h3 class="media-heading"><?php the_title(); ?></h3>
@@ -50,7 +50,7 @@
               echo '<div class="col-xs-4"><h4 class="list-head">' . $month->year . '</h4><ul class="list-unstyled">';
             }
             
-            echo '<li><a href="' . home_url() . '/' . date("m", mktime(0,0,0,$month->month,1,$month->year)) . '">' . date_i18n("M", mktime(0,0,0,$month->month, 1, $month->year)) . '</a></li>';
+            echo '<li><a href="' . home_url() . '/' . $month->year . '/' . date("m", mktime(0,0,0,$month->month,1,$month->year)) . '">' . date_i18n("M", mktime(0,0,0,$month->month, 1, $month->year)) . '</a></li>';
 
             if($year_current != $year_prev){
               echo '</ul></div>';

@@ -472,6 +472,9 @@ article ul>li{
 .author-meta{
   margin-top:40px;
 }
+.author-meta .media-left img{
+  border-radius:50%;
+}
 .archives-widget{
   margin-top:60px;
 }
