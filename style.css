@@ -260,9 +260,6 @@ footer .social>a:focus{
   box-shadow: 0px 5px 17px #000;
   position:relative;
 }
-#learnSection .video-side{
-  background-color:#000;
-}
 
 #testimonials{
   padding-top:60px;
@@ -650,6 +647,9 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   #servicesTabs img.media-object{
     width:80px;
   }
+  #learnSection .container-sm-height{
+    width:100%;
+  }
 }
 @media (min-width:768px){
   .navbar-collapse{
@@ -699,7 +699,9 @@ http://wordpress.org/extend/plugins/wp-pagenavi/
   .hp-hero .col-sm-height{
     vertical-align:top;
   }
-  #learnSection>.container-fluid{
-    margin-left:-15px;
+  #learnSection .embed-responsive{
+    max-width:495px;
+    margin-left:auto;
+    margin-top:-60px;
   }
 }

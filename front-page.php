@@ -15,14 +15,14 @@
   <section id="learnSection">
     <div class="container-fluid container-sm-height">
       <div class="row row-sm-height">
-        <div class="col-sm-6 col-md-7 col-lg-8 col-sm-height video-side">
+        <div class="col-sm-6 col-md-7 col-sm-height video-side">
           <div class="embed-responsive embed-responsive-4by3">
             <video controls>
               <source src="<?php the_field('video'); ?>" type="video/mp4" />
             </video>
           </div>
         </div>
-        <div class="col-sm-6 col-md-5 col-lg-4 col-sm-height">
+        <div class="col-sm-6 col-md-5 col-sm-height">
           <div class="narrow-section">
             <?php the_field('video_section_content'); ?>
             <a href="<?php the_field('video_section_link'); ?>" class="btn-main"><?php the_field('video_section_link_text') ;?></a>
