@@ -279,6 +279,10 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 }
 
 function elkmobility_header_fallback_menu(){ ?>
+  <?php
+    $facebook = get_field('facebook', 'option');
+    $linkedin = get_field('linkedin', 'option');
+  ?>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
       <li<?php if(is_front_page()){ echo ' class="active"'; } ?>><a href="<?php echo home_url(); ?>">Home</a></li>
