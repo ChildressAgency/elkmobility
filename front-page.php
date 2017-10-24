@@ -16,11 +16,7 @@
     <div class="container-fluid container-sm-height">
       <div class="row row-sm-height">
         <div class="col-sm-6 col-md-7 col-sm-height video-side">
-          <div class="embed-responsive embed-responsive-4by3">
-            <video controls>
-              <source src="<?php the_field('video'); ?>" type="video/mp4" />
-            </video>
-          </div>
+          <?php echo do_shortcode('[goal id="142"]'); ?>
         </div>
         <div class="col-sm-6 col-md-5 col-sm-height">
           <div class="narrow-section">
